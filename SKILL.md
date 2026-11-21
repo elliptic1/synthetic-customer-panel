@@ -1,6 +1,6 @@
 ---
 name: synthetic-customer-panel
-description: Run multi-agent synthetic customer interviews on websites, products, services, or offers. Use free-text reactions to identify friction, compare variants or prices, and score simulated intent with Semantic Similarity Rating (SSR).
+description: Run synthetic customer interviews on websites, products, services, or offers. Use free-text reactions to identify friction, compare variants or prices, and score simulated intent with Semantic Similarity Rating (SSR).
 ---
 
 # Synthetic Customer Panel
@@ -9,8 +9,8 @@ Identify the decision the user wants to make, the audience, and the action that 
 
 ## Run the panel
 
-1. Choose personas before collecting answers. Use known audience traits and shares when available. For an exploratory panel, about 24 personas across three agents is a useful starting point. Include people with different needs and alternatives, leaving each persona’s opinion open. For study-style sampling, repeats, or comparison to human data, use [the study protocol](references/study-protocol.md).
-2. Assign independent agents and give each a persona profile, the frozen stimulus, and the same intent question. Use a fresh context per persona and variant when feasible. Keep the owner’s preferred result, other variants, previous interviews, scoring anchors, and prior findings out of the respondent context. If an agent generates several personas in one batch, disclose the batching. Record actual counts of agents, unique personas, and responses.
+1. Choose personas before collecting answers. Use known audience traits and shares when available. For an exploratory panel, about 24 personas is a useful starting point. Include people with different needs and alternatives, leaving each persona’s opinion open. For study-style sampling, repeats, or comparison to human data, use [the study protocol](references/study-protocol.md).
+2. When the host supports delegation, divide the personas among independent agents. Otherwise, run the interviews sequentially with one agent. Give each respondent their assigned profile, the frozen stimulus, and the same intent question. Use a fresh context per persona and variant when feasible. Keep the owner’s preferred result, other variants, previous interviews, scoring anchors, and prior findings out of the respondent context. If an agent generates several personas in one batch, disclose the batching. Record actual counts of agents, unique personas, and responses.
 3. Ask a neutral question about a single action. For example, “Given this offer, how likely would you be to [take the specified action]? Reply briefly in your own words.” Save the complete first answer as `intent_excerpt`, including hesitation, conditions, and negation. Then ask what caught their attention, what they would do next, or what influenced their answer. Keep follow-ups available for qualitative analysis.
 4. For an A/B or price comparison, vary only the intended stimulus detail, keep the question and scoring setup fixed, and use balanced arms or the same profiles in fresh contexts. Retain the assigned variant and persona ID with each response. Report any deliberate oversampling and any weighting by known audience shares.
 
