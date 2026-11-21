@@ -1,0 +1,4 @@
+interface:
+  display_name: "Synthetic Customer Panel"
+  short_description: "Run synthetic customer interviews and score intent"
+  default_prompt: "Use $synthetic-customer-panel to interview prospective customers about this concept or offer and summarize what to test."
